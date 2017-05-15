@@ -26,7 +26,7 @@ public final class PhoneNumberFactory {
         PhoneNumber[] phoneBook = new PhoneNumber[phoneNumberCount];
 
         for(int i = 0; i < phoneBook.length; i++) {
-            phoneBook[i]=createRandomPhoneNumber(); 
+            phoneBook[i]=createRandomPhoneNumber();
         }
 
 
@@ -69,7 +69,7 @@ public final class PhoneNumberFactory {
      * @throws InvalidPhoneNumberFormatException - thrown if phoneNumberString does not match acceptable format
      */ // TODO - Add throws statement to method signature
     public static PhoneNumber createPhoneNumber(String phoneNumberString) throws InvalidPhoneNumberFormatException {
-
-        return null;
+        PhoneNumber phoneNumber = new PhoneNumber(phoneNumberString);
+        return phoneNumber;
     }
 }
