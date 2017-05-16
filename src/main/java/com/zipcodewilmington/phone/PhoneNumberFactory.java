@@ -60,7 +60,7 @@ public final class PhoneNumberFactory {
 
         }catch(InvalidPhoneNumberFormatException ipnfe){
             String phoneNumberString = "(" + areaCode + ")-" + centralOfficeCode + "-" + phoneLineCode;
-            logger.info(phoneNumberString +"is not a valid phone number");
+            logger.warn(phoneNumberString +"is not a valid phone number");
             return null;
         }
     }
